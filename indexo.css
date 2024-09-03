@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.escolha_container{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden; 
+}
+
+.ladoD{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10vh;
+    z-index: 1;
+    transition: 0.5s ; 
+    background-size: cover;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    /* background-image: url(assents/papel-de-parede-para-restaurante-cozinha-lavavel-ssca-026-adesivo-para-parede.jpg); */
+}
+
+.ladoE{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10vh;
+    z-index: 0;
+    transition: 0.5s ; 
+    flex-direction: column;
+    box-sizing: border-box;
+    background-size: cover;
+    /* background-image: url(assents/papel-de-parede-para-restaurante-cozinha-lavavel-ssca-047-adesivo-de-parede-para-cozinha.webp); */
+}
+
+.ladoD{
+    background-color: #F1D7C9;
+    
+}
+
+.ladoE{
+    background-color: #EED4FE;
+}
+
+.conteudo{
+    font-size: 2.31vh;
+    font-family: "Josefin Sans", sans-serif;
+    height: auto;
+}
+
+/* botão escolha das receitas */
+.buttonReceitas{ 
+    text-align: center;
+    margin-top: 5vh;
+}
+
+/* botão escolha das receitas, hyperlink */
+.buttonReceitas a{
+    color: white;
+    padding: 2vh;
+    background-color: #393E77;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.conteudo h1, p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container_imagemD{
+    position: absolute;
+    bottom: 116px;
+    transition: all 1s;
+    left: 6%;
+    width: 100%;
+    height: 50%;
+    /* background-color: turquoise; */
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+} 
+.container_imagemE {
+    position: absolute;
+    /* background-color: black; */
+    bottom: 116px;
+    right: 6%;
+    transition: 1s;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    overflow: visible;
+    display: flex;
+}
+
+.container_imagemD img{
+    width: 73%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+} 
+
+.container_imagemE img {
+    width: 78%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+    z-index: -1;
+}
+
+
+.ladoD:hover{
+    width: 100%;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.ladoE:hover{
+    width: 100%;
+    transition: all 1s;
+    z-index: 1;
+}
+
+picture img{
+    position: absolute;
+    margin-top: 8vh;
+    width: 58%;
+    margin-left: -21vh;
+}
+
+.imagemDentro{
+    width: 100%;
+}
+
+.imagemDentro img{
+    width: 100%;
+}
+
+
+.pictureE img{
+    position: absolute;
+    margin-top: 1vh;
+    width: 31%;
+    margin-left: 55vh;
+}
+
+
