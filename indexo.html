@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
     <nav id="diferente" class="navbar navbar-expand-lg fixed-top f bg-body-tertiary mb-5">
         <div class="container-fluid">
             <a class="navbar-brand fs-1" href="#"></a>
@@ -52,7 +51,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="button">
-                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                             class="bi bi-list" viewBox="0 0 16 16">
@@ -67,21 +66,20 @@
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-                Naveque pelo nosso site
-            </h5>
+            <h2 class="offcanvas-title" id="offcanvasScrollingLabel">
+                Navegue pelo nosso site
+            </h2>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="">Cadastro</a></li>
-                <li class="list-group-item"><a href="">Receitas</a></li>
-                <li class="list-group-item"><a href="">Chefs</a></li>
-                <li class="list-group-item"><a href="">Contato</a></li>
+                <li class="list-group-item fs-4"><a href="">Cadastro</a></li>
+                <li class="list-group-item fs-4"><a href="">Receitas</a></li>
+                <li class="list-group-item fs-4"><a href="">Chefs</a></li>
+                <li class="list-group-item fs-4"><a href="">Contato</a></li>
             </ul>
         </div>
     </div>
-
     <!-- Parte Jeff Escolha -->
     <section class="escolha_container">
         <div class="ladoD">
@@ -173,6 +171,8 @@
         <script src="receitas.js"></script>
     </section>
     <!-- Parte Yuri Escolha Gelado -->
+
+    <!-- Parte do Marcelo - Chefs -->
     <section class="corpo">
         <header class="header">
             <h1>Chefs</h1>
@@ -239,9 +239,60 @@
         <script src="main.js"></script>
     </section>
 
-    <!-- Parte do Marcelo - Chefs -->
+    <!-- Parte Guilherme - Cadastro -->
+     
+    <section class="containerC">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) x xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
 
 
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Confirme sua senha" required>
+                    </div>
+
+                </div>
+
+                
+                <div class="continue-button">
+                    <button><a href="#">Entrar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
 </body>
 
 </html>
