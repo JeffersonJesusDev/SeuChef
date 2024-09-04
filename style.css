@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(Imagens/backgroud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.navbar .nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar .nav-list li {
+  margin: 0 15px;
+}
+
+.navbar .nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-list a:hover {
+  color: orangered;
+}
+
+.header {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+  height: auto;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Menos efeito de desfoque */
+  background: rgba(255, 255, 255, 0.5); /* Diminuir a opacidade do fundo */
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-list .card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.6); /* Ajuste para hover também */
+}
+
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 4px solid orangered;
+  padding: 4px;
+}
+
+.card-list .card-item .user-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 500;
+}
+
+.card-list .card-item .user-profession {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+  font-size: 16px;
+  padding: 12px 40px;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  background: orangered;
+  border: 2px solid transparent;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.card-list .card-item .message-button:hover {
+  background: #ff5722;
+  border: 2px solid #fff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: orangered;
+  height: 12px;
+  width: 12px;
+  opacity: 0.6;
+  transition: background 0.3s;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ff5722;
+}
+
+.slider-wrapper .swiper-button-next,
+.slider-wrapper .swiper-button-prev {
+  color: orangered;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.slider-wrapper .swiper-button-next:hover,
+.slider-wrapper .swiper-button-prev:hover {
+  background: orangered;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+  .slider-wrapper {
+    margin: 0 40px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .slider-wrapper {
+    margin: 0 20px 40px;
+  }
+  
+  .card-list .card-item {
+    padding: 25px;
+  }
+  
+  .card-list .card-item .user-name {
+    font-size: 22px;
+  }
+  
+  .card-list .card-item .user-profession {
+    font-size: 14px;
+  }
+  
+  .card-list .card-item .message-button {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 30px;
+  }
+  
+  .card-list .card-item {
+    padding: 20px;
+  }
+  
+  .card-list .card-item .user-name {
+    font-size: 20px;
+  }
+  
+  .card-list .card-item .user-profession {
+    font-size: 12px;
+  }
+  
+  .card-list .card-item .message-button {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .card-list .card-item {
+    padding: 15px;
+  }
+  
+  .card-list .card-item .user-name {
+    font-size: 18px;
+  }
+  
+  .card-list .card-item .user-profession {
+    font-size: 10px;
+  }
+  
+  .card-list .card-item .message-button {
+    padding: 6px 20px;
+  }
+}
