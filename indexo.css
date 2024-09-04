@@ -111,7 +111,7 @@
 } 
 
 .container_imagemE img {
-    width: 78%;
+    width: 66%;
     height: 100%;
     object-fit: cover;
     transition: all 1s;
@@ -149,9 +149,29 @@ picture img{
 
 .pictureE img{
     position: absolute;
-    margin-top: 1vh;
-    width: 31%;
-    margin-left: 55vh;
+    margin-top: 20vh;
+    width: 76%;
+    margin-left: 25vh;
+}
+
+.pictureLdConteudo1{
+    position: absolute;
+    width: 100%;
+    margin-top: -15vh;
+    left: 80%;
+}
+
+.pictureLdConteudo1 img{
+    width: 70%;
+}
+
+.pictureLdConteudo{
+    position: absolute;
+    width: 100%;
+    margin-top: -15vh;
+}
+.pictureLdConteudo img{
+    width: 52%;
 }
 
 
