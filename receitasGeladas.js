@@ -12,4 +12,3 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.slide2').prepend(items[items.length - 1])
     })
 });
-

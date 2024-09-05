@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Seu Chef</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- Parte feita pelo jesse usando bootstrap -->
+    <nav id="a" class="navbar navbar-expand-lg fixed-top f bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1" href="#"></a>
+        <button
+          class="btn btn-dark navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav d-flex align-items-stretch justify-content-around w-100 me-auto mb-2 mb-lg-0 fs-4"
+          >
+            <li class="nav-item d-flex align-items-end">
+              <a class="nav-link active" aria-current="page" href="/#container2"
+                >Receitas</a
+              >
+            </li>
+            <li class="nav-item d-flex align-items-end">
+              <a class="nav-link" href="#container3">Chefs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img class="logo-img" width="" src="./assets/imgs/logo.png" alt="" />
+              </a>
+            </li>
+            <li class="nav-item d-flex align-items-end">
+              <a class="nav-link" href="#container4"> Sobre </a>
+            </li>
+
+            <li class="nav-item d-flex align-items-end">
+              <a class="nav-link" href="#container6"> Contato </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="button">
+            <button
+              class="btn btn-outline-dark"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasScrollingLabel">
+          Navegue pelo nosso site
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fs-4"><a href="./indexo.html#containerC">Cadastro</a></li>
+          <li class="list-group-item fs-4"><a href="./indexo.html">Receitas</a></li>
+          <li class="list-group-item fs-4"><a href="./indexo.html#corpo">Chefs</a></li>
+          <li class="list-group-item fs-4">
+            <a href="#container6">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- container hero section homepage -->
+    <div class="container1">
+      <div class="h1-hero-section">
+        <h1 class="display-1">Os Melhores <br />Chef's na sua <br />cozinha</h1>
+
+        <img
+          class="plate-img plate1"
+          src="./assets/imgs/home-imgs/bife-grelhado-fatiado-servido-com-salada-verde-com-ovos-edit.png"
+          alt=""
+        />
+        <img
+          class="plate-img plate2"
+          src="assets/imgs/home-imgs/vista-superior-da-deliciosa-refeicao-de-peixe-cozido.png"
+          alt=""
+        />
+        <img
+          class="plate-img plate3"
+          src="assets/imgs/home-imgs/salada-tabbouleh-com-cuscuz-e-legumes-isolados-em-fundo-branco.png"
+          alt=""
+        />
+        <img
+          class="plate-img plate4"
+          src="assets/imgs/home-imgs/sopa-de-ramen-plana-leigos-na-tigela.png"
+          alt=""
+        />
+        <img
+          class="plate-img plate5"
+          src="assets/imgs/home-imgs/pngegg 2.png"
+          alt=""
+        />
+
+        <div class="bg-rounded-orange">
+          <div class="icons">
+            <div>
+              <a href="https://www.instagram.com/_ijeffz/" target="_blank"
+                ><i class="bi bi-instagram fs-1"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com" target="_blank">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jesse fez isso (receitas previa de entrada) -->
+    <div class="container2" id="container2">
+      <div class="right-side">
+        <div class="information">
+          <h1 class="display-1 mb-5 pb-5">Preparo simples e rápido</h1>
+          <p class="fs-2">
+            Estamos reunindo receitas e gostaríamos da sua contribuição. Envie a
+            sua receita favorita, incluindo ingredientes e modo de preparo.
+            Vamos criar um acervo incrível juntos
+          </p>
+        </div>
+        <div class="div-button-right mt-5">
+          <a href="./indexo.html" class="btn btn-receitas">Receitas</a>
+        </div>
+      </div>
+
+      <div class="left-side">
+        <video autoplay loop muted>
+          <source
+            src="./assets/imgs/receitas-hero-section-imgs/6037296_Chef_Man_3840x2160.mp4"
+          />
+        </video>
+      </div>
+    </div>
+    <!-- jesse fez isso (Espiada nos chefs kk) -->
+
+    <div class="container3" id="container3">
+      <div class="right-side-chefs">
+        <video autoplay loop muted>
+          <source
+            src="./assets/imgs/receitas-hero-section-imgs/5082086_Seasoned_Raw_1920x1080.mp4"
+          />
+        </video>
+      </div>
+
+      <div class="left-side-chefs">
+        <div class="information">
+          <h1 class="display-1">Dê uma espiada em nossos chefs</h1>
+          <p class="fs-2">
+            Os chefs de cozinha são artistas que transformam ingredientes em
+            experiências únicas. Com talento e paixão, eles nos levam em uma
+            viagem pelos sabores.
+          </p>
+        </div>
+        <div class="div-button-right mt-5">
+          <a href="./indexo.html#corpo" class="btn btn-chefs">Chefs</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sobre nós ksks -->
+    <div class="container4 mb-5 pb-5" id="container4">
+      <div class="img-we">
+        <img
+          class="group-img"
+          src="assets/imgs/office-workers-working-together-as-team.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="interprise-description">
+        <h1>Sobre <em>nós</em></h1>
+        <p class="fs-3">
+          Somos empresa inovadora que oferece serviços de chef a domicílio,
+          trazendo a experiência de alta gastronomia para o conforto da sua
+          casa. Com uma equipe dedicada de 5 membros, a SeuChef se destaca por
+          personalizar menus exclusivos e proporcionar uma experiência culinária
+          única, ideal para jantares íntimos, eventos especiais ou reuniões
+          familiares. O diferencial da empresa é o toque personalizado e a
+          atenção aos detalhes, garantindo que cada cliente desfrute de pratos
+          sofisticados e de um serviço de excelência.
+        </p>
+      </div>
+    </div>
+
+    <div class="container5 mt-5 pt-5 pb-5" id="container5">
+      <h1 class="title-equipe-desenvolvimento">
+        Nossa <em>Equipe</em> de Desenvolvimento
+      </h1>
+
+      <div class="wrap wrap--1">
+        <div class="container container--1">
+          <div class="card-title">
+            <h1>Jesse</h1>
+            <p>FullStack Developer and Desing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap wrap--2">
+        <div class="container container--2">
+          <div class="card-title">
+            <h1>Jeff</h1>
+            <p>FullStack Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap wrap--3">
+        <div class="container container--3">
+          <div class="card-title">
+            <h1>Yuri</h1>
+            <p>FullStack Developer and Desing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap wrap--4">
+        <div class="container container--4">
+          <div class="card-title">
+            <h1>Guilherme</h1>
+            <p>FullStack Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap wrap--5">
+        <div class="container container--5">
+          <div class="card-title">
+            <h1>Marcelo</h1>
+            <p>FullStack Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container6 mb-0 pb-0" id="container6">
+      <footer>
+        <div class="footerD">
+          <h2>ONDE NOS ENCONTRAR</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4567.890334969992!2d-46.694335123739954!3d-23.528080960372105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e1!3m2!1spt-BR!2sbr!4v1725454249328!5m2!1spt-BR!2sbr"
+            width="500"
+            height="80%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="footerM">
+          <h2>CONTATOS</h2>
+          <div class="container_texto">
+            <h3>Email:</h3>
+            <p>naurto@otimosite.com.br</p>
+            <h3>Número:</h3>
+            <p>11 4002-8922</p>
+          </div>
+        </div>
+
+        <div class="footerE">
+          <h2>DUVIDAS</h2>
+            <div class="conta">
+            <a href="#container4">Sobre Nós</a>
+            <a href="#">Termos de responsabilidade</a>
+            <a href="#">Uso de dados</a>
+            </div>
+          </div>
+      </footer>
+    </div>
+
+    
+    <script src="./js/card.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
