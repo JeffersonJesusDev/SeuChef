@@ -19,6 +19,16 @@ body {
     height: 125vh;
 }
 
+.containerAChefs {
+    color: #f54828;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.containerAChefs:hover{
+    color: white;
+}
+
 header {
     display: flex;
     justify-content: center;

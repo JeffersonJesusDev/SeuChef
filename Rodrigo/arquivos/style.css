@@ -26,6 +26,16 @@ header {
     padding: 1rem;
 }
 
+.containerAChefs {
+    color: #f54828;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.containerAChefs:hover{
+    color: white;
+}
+
 .container-text {
     background: rgba(0, 0, 0, 0.6);
     padding: 30px;

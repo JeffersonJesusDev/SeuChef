@@ -61,6 +61,16 @@ header {
     margin-bottom: 1rem;
 }
 
+.containerAChefs {
+    color: #f54828;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.containerAChefs:hover{
+    color: white;
+}
+
 .redes-social {
     margin-top: 20px;
     display: flex;
